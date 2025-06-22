@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   return (
@@ -26,15 +27,14 @@ const AboutPage = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link fw-medium py-3" href="/" style={{ color: '#6c757d' }}>INICIO</a>
+                <Link className="nav-link fw-medium py-3" to="/" style={{ color: '#6c757d' }}>INICIO</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-medium py-3" href="/About" style={{ color: '#2c3e50', borderBottom: '2px solid #2c3e50' }}>SOBRE MÍ</a>
+                <Link className="nav-link fw-medium py-3" to="/about" style={{ color: '#6c757d' }}>SOBRE MÍ</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-medium py-3" href="/servicios" style={{ color: '#6c757d' }}>SERVICIOS</a>
+                <Link className="nav-link fw-medium py-3" to="/servicios" style={{ color: '#6c757d' }}>SERVICIOS</Link>
               </li>
-
             </ul>
           </div>
         </div>
@@ -52,7 +52,7 @@ const AboutPage = () => {
                 Dra. Marcela Navarro Guzmán
               </h1>
               <p className="lead mb-4" style={{ color: '#6c757d', maxWidth: '800px', margin: '0 auto' }}>
-                Especialista en Urología comprometida con brindar atención médica de excelencia,
+                Médico Especialista en Urología graduada en la Universidad de Costa Rica,
                 con un enfoque integral y personalizado para cada paciente.
               </p>
             </div>
@@ -81,15 +81,16 @@ const AboutPage = () => {
             <div className="col-lg-6">
               <h2 className="h1 fw-bold text-dark mb-4">Mi Historia Profesional</h2>
               <p className="text-muted mb-4">
-                Con más de 9 años de experiencia en el campo de la urología, me he dedicado a
+                Con más de 11 años de experiencia en el campo de la urología, me he dedicado a
                 proporcionar atención médica especializada con un enfoque integral y personalizado.
-                Mi compromiso es brindar a cada paciente la mejor atención posible, combinando
-                conocimiento técnico actualizado con un trato humano y empático.
+                Mi principal interés es la Urología general con un enfoque integral de sus diversas
+                patologías con énfasis en el manejo desde tres aristas: médico-quirúrgico-psicoemocional.
               </p>
               <p className="text-muted mb-4">
-                A lo largo de mi carrera, he tenido el privilegio de ayudar a cientos de pacientes
-                en el diagnóstico y tratamiento de diversas patologías urológicas, siempre manteniendo
-                los más altos estándares de calidad y profesionalismo.
+                Soy uróloga graduada de la Universidad de Costa Rica. Inicié mi carrera hace más de
+                11 años y aún sigue siendo una gran pasión el aprendizaje continuo de esta especialidad.
+                Mis fortalezas son mi fortaleza en Dios, mi pasión por esta carrera y la dedicación
+                a mis pacientes con calidez humana y empatía.
               </p>
               <div className="mb-4">
                 <div className="d-flex align-items-center mb-2">
@@ -105,13 +106,14 @@ const AboutPage = () => {
                 <div className="d-flex align-items-center">
                   <i className="fas fa-calendar-alt text-secondary me-3 fs-5"></i>
                   <span className="fw-medium text-dark">Experiencia:</span>
-                  <span className="text-muted ms-2">Más de 9 años</span>
+                  <span className="text-muted ms-2">Más de 11 años</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       {/* Botón flotante de WhatsApp */}
       <a
         href="https://wa.me/50687051691"
@@ -178,7 +180,7 @@ const AboutPage = () => {
                     </div>
                     <div>
                       <h5 className="text-dark mb-2">Licenciatura en Medicina</h5>
-                      <p className="text-muted mb-2">Universidad Nacional de Costa Rica</p>
+                      <p className="text-muted mb-2">Universidad de Costa Rica</p>
                       <p className="text-secondary small mb-0">Graduada con honores</p>
                     </div>
                   </div>
@@ -195,8 +197,8 @@ const AboutPage = () => {
                     </div>
                     <div>
                       <h5 className="text-dark mb-2">Especialización en Urología</h5>
-                      <p className="text-muted mb-2">Hospital Nacional de Costa Rica</p>
-                      <p className="text-secondary small mb-0">Residencia médica especializada</p>
+                      <p className="text-muted mb-2">Universidad de Costa Rica</p>
+                      <p className="text-secondary small mb-0">Especialidad médica especializada</p>
                     </div>
                   </div>
                 </div>
@@ -229,8 +231,88 @@ const AboutPage = () => {
                     </div>
                     <div>
                       <h5 className="text-dark mb-2">Membresías Profesionales</h5>
-                      <p className="text-muted mb-2">Colegio de Médicos y Cirujanos</p>
-                      <p className="text-secondary small mb-0">Miembro activo de asociaciones médicas</p>
+                      <p className="text-muted mb-2">Múltiples Asociaciones Internacionales</p>
+                      <p className="text-secondary small mb-0">Miembro activo de asociaciones de urología</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Membresías Profesionales */}
+      <section className="py-5 bg-white">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto text-center mb-5">
+              <h2 className="h1 fw-bold text-dark mb-4">Membresías Profesionales</h2>
+              <p className="lead text-muted">
+                Miembro activo de prestigiosas asociaciones de urología a nivel internacional
+              </p>
+            </div>
+          </div>
+          <div className="row g-4">
+            <div className="col-lg-6">
+              <div className="card border-0 shadow-sm h-100">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-start">
+                    <div className="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
+                      style={{ width: '60px', height: '60px', minWidth: '60px' }}>
+                      <i className="fas fa-globe-europe text-white fs-4"></i>
+                    </div>
+                    <div>
+                      <h5 className="text-dark mb-2">Asociación Europea de Urología</h5>
+                      <p className="text-muted mb-0">Miembro activo de la EAU (European Association of Urology)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="card border-0 shadow-sm h-100">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-start">
+                    <div className="bg-success rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
+                      style={{ width: '60px', height: '60px', minWidth: '60px' }}>
+                      <i className="fas fa-flag-usa text-white fs-4"></i>
+                    </div>
+                    <div>
+                      <h5 className="text-dark mb-2">Asociación Americana de Urología</h5>
+                      <p className="text-muted mb-0">Miembro activo de la AUA (American Urological Association)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="card border-0 shadow-sm h-100">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-start">
+                    <div className="bg-info rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
+                      style={{ width: '60px', height: '60px', minWidth: '60px' }}>
+                      <i className="fas fa-map-marker-alt text-white fs-4"></i>
+                    </div>
+                    <div>
+                      <h5 className="text-dark mb-2">Asociación Costarricense de Cirugía Urológica</h5>
+                      <p className="text-muted mb-0">Miembro activo comprometido con la urología nacional</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="card border-0 shadow-sm h-100">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-start">
+                    <div className="bg-warning rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
+                      style={{ width: '60px', height: '60px', minWidth: '60px' }}>
+                      <i className="fas fa-globe-americas text-white fs-4"></i>
+                    </div>
+                    <div>
+                      <h5 className="text-dark mb-2">Confederación Americana de Urología</h5>
+                      <p className="text-muted mb-0">Miembro de la CAU, promoviendo la excelencia urológica continental</p>
                     </div>
                   </div>
                 </div>
@@ -241,53 +323,53 @@ const AboutPage = () => {
       </section>
 
       {/* Filosofía de Trabajo */}
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-light">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
               <h2 className="h1 fw-bold text-dark mb-4">Mi Filosofía de Trabajo</h2>
               <p className="lead text-muted mb-5">
-                Creo firmemente en un enfoque integral y personalizado para cada paciente
+                Enfoque integral de la urología desde tres aristas fundamentales
               </p>
             </div>
           </div>
           <div className="row g-4">
             <div className="col-lg-4">
               <div className="text-center">
-                <div className="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm"
+                <div className="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm"
                   style={{ width: '80px', height: '80px' }}>
-                  <i className="fas fa-heart text-secondary fs-3"></i>
+                  <i className="fas fa-user-md text-primary fs-3"></i>
                 </div>
-                <h4 className="text-dark mb-3">Atención Personalizada</h4>
+                <h4 className="text-dark mb-3">Enfoque Médico</h4>
                 <p className="text-muted">
-                  Cada paciente es único y merece un tratamiento personalizado que considere
-                  sus necesidades específicas y circunstancias particulares.
+                  Diagnóstico preciso y tratamiento basado en evidencia científica,
+                  utilizando las técnicas más avanzadas disponibles.
                 </p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="text-center">
-                <div className="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm"
+                <div className="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm"
                   style={{ width: '80px', height: '80px' }}>
-                  <i className="fas fa-microscope text-secondary fs-3"></i>
+                  <i className="fas fa-procedures text-success fs-3"></i>
                 </div>
-                <h4 className="text-dark mb-3">Diagnóstico Preciso</h4>
+                <h4 className="text-dark mb-3">Enfoque Quirúrgico</h4>
                 <p className="text-muted">
-                  Utilizo las técnicas diagnósticas más avanzadas para asegurar
-                  un diagnóstico preciso y un plan de tratamiento efectivo.
+                  Procedimientos quirúrgicos especializados cuando son necesarios,
+                  con técnicas mínimamente invasivas y resultados óptimos.
                 </p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="text-center">
-                <div className="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm"
+                <div className="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm"
                   style={{ width: '80px', height: '80px' }}>
-                  <i className="fas fa-handshake text-secondary fs-3"></i>
+                  <i className="fas fa-heart text-warning fs-3"></i>
                 </div>
-                <h4 className="text-dark mb-3">Comunicación Abierta</h4>
+                <h4 className="text-dark mb-3">Enfoque Psicoemocional</h4>
                 <p className="text-muted">
-                  Mantengo una comunicación clara y abierta con mis pacientes,
-                  explicando cada paso del proceso de manera comprensible.
+                  Atención integral que considera el bienestar emocional del paciente,
+                  brindando apoyo y comprensión durante todo el proceso.
                 </p>
               </div>
             </div>
@@ -296,7 +378,7 @@ const AboutPage = () => {
       </section>
 
       {/* Áreas de Especialización */}
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-white">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center mb-5">
@@ -368,7 +450,7 @@ const AboutPage = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-light">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
@@ -377,7 +459,7 @@ const AboutPage = () => {
                 Agenda tu cita y recibe atención médica especializada y personalizada
               </p>
               <div className="d-flex gap-3 justify-content-center">
-                <a href="https://wa.me/50612345678"
+                <a href="https://wa.me/50687051691"
                   className="btn px-4 py-3 rounded-pill fw-medium"
                   style={{ backgroundColor: '#25d366', color: 'white', border: 'none' }}
                   target="_blank">
@@ -394,27 +476,93 @@ const AboutPage = () => {
       </section>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#6c757d' }} className="text-white py-4">
+      <footer className="bg-dark text-white py-5">
         <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="d-flex align-items-center mb-4">
+                <div
+                  className="me-3"
+                  style={{
+                    width: '60px',
+                    height: '60px',
+                    borderRadius: '50%',
+                    overflow: 'hidden',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    border: '2px solid white', // <- corregido
+                  }}
+                >
+                  <img
+                    src="Logo.png"
+                    alt="Logo"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                </div>
+                <div>
+                  <h5 className="mb-1">Dra. Marcela Navarro Guzmán</h5>
+                  <p className="text-white-50 mb-0">Especialista en Urología</p>
+                </div>
+              </div>
+              <p className="text-white-50 mb-4">
+                Brindando atención urológica especializada con los más altos estándares de calidad y tecnología médica.
+              </p>
+            </div>
+
+            <div className="col-lg-3">
+              <h6 className="text-white mb-3">Enlaces Rápidos</h6>
+              <ul className="list-unstyled">
+                <li className="mb-2">
+                  <Link to="/" className="text-white-50 text-decoration-none">
+                    <i className="fas fa-home me-2"></i>Inicio
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/about" className="text-white-50 text-decoration-none">
+                    <i className="fas fa-user-md me-2"></i>Sobre Mí
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/servicios" className="text-white-50 text-decoration-none">
+                    <i className="fas fa-stethoscope me-2"></i>Servicios
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="col-lg-3">
+              <h6 className="text-white mb-3">Contacto</h6>
+              <p className="text-white-50 mb-2">
+                <i className="fab fa-whatsapp me-2"></i>
+                +506 8705-1691
+              </p>
+
+              {/* Horarios de Atención */}
+              <h6 className="text-white mt-4 mb-2">Horarios de Atención</h6>
+              <ul className="list-unstyled text-white-50 mb-0 small">
+                <li>Lunes: Cerrado</li>
+                <li>Martes: 1:20 PM - 6:00 PM</li>
+                <li>Miércoles: Cerrado</li>
+                <li>Jueves: 1:20 PM - 6:00 PM</li>
+                <li>Viernes: Cerrado</li>
+                <li>Sábado: 10:00 AM - 2:00 PM</li>
+                <li>Domingo: Cerrado</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr className="border-secondary my-4" />
+
           <div className="row align-items-center">
             <div className="col-md-6">
-              <h5 className="mb-0">Dra. Marcela Navarro Guzmán</h5>
-              <p className="mb-0 text-light">Especialista en Urología - MED9124</p>
+              <p className="text-white-50 mb-0">
+                © 2025 Dra. Marcela Navarro Guzmán. Todos los derechos reservados.
+              </p>
             </div>
             <div className="col-md-6 text-md-end">
-              <div className="d-flex justify-content-md-end gap-3">
-                <a href="#" className="text-light">
-                  <i className="fab fa-facebook fs-5"></i>
-                </a>
-                <a href="#" className="text-light">
-                  <i className="fab fa-instagram fs-5"></i>
-                </a>
-                <a href="#" className="text-light">
-                  <i className="fab fa-linkedin fs-5"></i>
-                </a>
-              </div>
-              <p className="mb-0 mt-2 text-light small">
-                © 2025 Todos los derechos reservados
+              <p className="text-white-50 mb-0">
+                Especialista en Urología
               </p>
             </div>
           </div>

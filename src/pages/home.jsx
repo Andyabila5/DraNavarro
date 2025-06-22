@@ -148,7 +148,7 @@ const App = () => {
               </p>
 
               <div className="text-center">
-                <a href="/about" className="btn btn-outline-secondary px-4 py-2">
+                <a href="DraNavarro/about" className="btn btn-outline-secondary px-4 py-2">
                   Ver más información
                 </a>
               </div>
