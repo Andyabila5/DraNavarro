@@ -8,9 +8,70 @@ import {
     FaMobileAlt,
     FaInfoCircle
 } from 'react-icons/fa';
-
+import {
+    Stethoscope,
+    RotateCcw,
+    Microscope,
+    Scissors,
+    Zap,
+    Activity,
+    Search,
+    Wrench
+} from "lucide-react";
 
 const ServicesPage = () => {
+    const services = [
+        {
+            id: 1,
+            title: "Consulta Médica Especializada",
+            description: "Evaluación integral con diagnóstico profesional y plan de tratamiento personalizado.",
+            icon: Stethoscope
+        },
+        {
+            id: 2,
+            title: "Reconsulta",
+            description: "Seguimiento a consulta previa. Traer resultados solicitados por el médico.",
+            icon: RotateCcw
+        },
+        {
+            id: 3,
+            title: "Biopsia de Próstata",
+            description: "Diagnóstico especializado para detectar anomalías en el tejido prostático. Requiere laboratorios previos.",
+            icon: Microscope
+        },
+        {
+            id: 4,
+            title: "Vasectomía",
+            description: "Procedimiento anticonceptivo masculino permanente. Alta efectividad y recuperación rápida.",
+            icon: Scissors
+        },
+        {
+            id: 5,
+            title: "Cauterización de Papilomas",
+            description: "Eliminación rápida y segura de lesiones cutáneas causadas por VPH.",
+            icon: Zap
+        },
+        {
+            id: 6,
+            title: "Circuncisión",
+            description: "Intervención ambulatoria para remover el prepucio. Mejora la higiene y puede reducir infecciones.",
+            icon: Activity
+        },
+        {
+            id: 7,
+            title: "Cistoscopia",
+            description: "Estudio endoscópico para evaluar vejiga y uretra. Útil para diagnosticar infecciones y obstrucciones.",
+            icon: Search
+        },
+        {
+            id: 8,
+            title: "Frenoplastia",
+            description: "Cirugía menor para liberar el frenillo del pene. Mejora funcionalidad y evita molestias.",
+            icon: Wrench
+        }
+    ];
+
+
     return (
         <div className="App">
             {/* Navbar */}
@@ -60,7 +121,7 @@ const ServicesPage = () => {
                                 Procedimientos Urológicos de Alta Calidad
                             </h1>
                             <p className="lead mb-4" style={{ color: '#6c757d' }}>
-                                Ofrezco una amplia gama de procedimientos urológicos especializados,
+                                Ofrecemos una amplia gama de procedimientos urológicos especializados,
                                 realizados con la más alta tecnología y estándares de calidad médica.
                             </p>
                             <div className="d-flex gap-3">
@@ -134,7 +195,7 @@ const ServicesPage = () => {
         }
       `}</style>
 
-            {/* Lista Completa de Servicios */}
+            {/* Lista Completa de Servicios - NUEVA SECCIÓN MODERNIZADA */}
             <section className="py-5 bg-white">
                 <div className="container">
                     <div className="row">
@@ -146,360 +207,74 @@ const ServicesPage = () => {
                         </div>
                     </div>
 
-                    {/* Consulta Médica Especializada */}
-                    <div className="row mb-5">
-                        <div className="col-lg-12">
-                            <div className="card border-0 shadow-lg">
-                                <div className="card-body p-5">
-                                    <div className="row">
-                                        <div className="col-lg-8">
-                                            <div className="d-flex align-items-start mb-4">
-                                                <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-4 shadow"
-                                                    style={{ width: '70px', height: '70px', minWidth: '70px' }}>
-                                                    <i className="fas fa-stethoscope fs-4"></i>
-                                                </div>
-                                                <div>
-                                                    <h3 className="text-dark mb-2">Consulta Médica Especializada</h3>
-                                                    <div className="d-flex align-items-center mb-3">
-                                                        <span className="badge bg-success fs-6 me-3">₡55,000 + IVA</span>
-                                                        <span className="text-muted">Primera consulta</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <h5 className="text-dark mb-3">El precio incluye:</h5>
-                                            <div className="row mb-4">
-                                                <div className="col-md-6">
-                                                    <h6 className="text-secondary mb-2">Para hombres mayores de 45 años:</h6>
-                                                    <ul className="list-unstyled text-muted">
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>PSA Total y Libre</li>
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>Ultrasonido de próstata</li>
-                                                    </ul>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <h6 className="text-secondary mb-2">Para mujeres con infección urinaria:</h6>
-                                                    <ul className="list-unstyled text-muted">
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>EGO (si es posible)</li>
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>Urocultivo</li>
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>Ultrasonido de vías urinarias</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div className="row mb-4">
-                                                <div className="col-md-6">
-                                                    <h6 className="text-secondary mb-2">Para hombres con infección/retención/prostatitis:</h6>
-                                                    <ul className="list-unstyled text-muted">
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>EGO (si es posible)</li>
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>PSA Total y Libre</li>
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>Urocultivo</li>
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>Ultrasonido de vías urinarias</li>
-                                                    </ul>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <h6 className="text-secondary mb-2">Para pacientes con hematuria:</h6>
-                                                    <ul className="list-unstyled text-muted">
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>Hemograma</li>
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>EGO</li>
-                                                        <li><i className="fas fa-check-circle text-success me-2"></i>Ultrasonido de vías urinarias</li>
-                                                        <li><i className="fas fa-exclamation-triangle text-warning me-2"></i>Pruebas de coagulación (si está anticoagulado)</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4">
-                                            <div className="bg-light rounded-4 p-4 h-100">
-                                                <h5 className="text-dark mb-3">
-                                                    <i className="fas fa-info-circle text-primary me-2"></i>
-                                                    Información Importante
-                                                </h5>
-                                                <p className="text-muted small mb-3">
-                                                    La consulta se adapta según su condición específica e incluye todos los estudios necesarios para un diagnóstico preciso.
-                                                </p>
-                                                <div className="alert alert-warning mb-0" role="alert">
-                                                    <small><strong>Nota:</strong> Los estudios incluidos varían según el motivo de consulta y edad del paciente.</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Reconsulta */}
-                    <div className="row mb-5">
-                        <div className="col-lg-12">
-                            <div className="card border-0 shadow-sm">
-                                <div className="card-body p-4">
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-8">
-                                            <div className="d-flex align-items-start">
-                                                <div className="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
-                                                    style={{ width: '60px', height: '60px', minWidth: '60px' }}>
-                                                    <i className="fas fa-redo-alt fs-5"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 className="text-dark mb-2">Reconsulta</h4>
-                                                    <span className="badge bg-info fs-6 mb-3">₡25,000 + IVA</span>
-                                                    <p className="text-muted mb-2">Válida dentro de un lapso de 2 meses desde la consulta inicial.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4">
-                                            <div className="alert alert-info mb-0" role="alert">
-                                                <small><strong>Requisito:</strong> Llevar resultados de laboratorio si fueron solicitados en consulta anterior.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Procedimientos Quirúrgicos */}
-                    <div className="row">
-                        <div className="col-lg-12 mb-4">
-                            <h2 className="h3 fw-bold text-dark text-center">Procedimientos Quirúrgicos</h2>
-                        </div>
-                    </div>
-
-                    {/* Biopsia de Próstata */}
-                    <div className="row mb-5">
-                        <div className="col-lg-12">
-                            <div className="card border-0 shadow-lg">
-                                <div className="card-body p-5">
-                                    <div className="row">
-                                        <div className="col-lg-8">
-                                            <div className="d-flex align-items-start mb-4">
-                                                <div className="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-4 shadow"
-                                                    style={{ width: '70px', height: '70px', minWidth: '70px' }}>
-                                                    <i className="fas fa-microscope fs-4"></i>
-                                                </div>
-                                                <div>
-                                                    <h3 className="text-dark mb-2">Biopsia de Próstata</h3>
-                                                    <span className="badge bg-danger fs-6 mb-3">₡300,000 + IVA</span>
-                                                </div>
-                                            </div>
-
-                                            <h5 className="text-dark mb-3">Requisitos previos:</h5>
-                                            <div className="row mb-4">
-                                                <div className="col-md-6">
-                                                    <h6 className="text-secondary mb-2">Laboratorios requeridos:</h6>
-                                                    <ul className="list-unstyled text-muted">
-                                                        <li><i className="fas fa-vial text-primary me-2"></i>Hemograma completo</li>
-                                                        <li><i className="fas fa-vial text-primary me-2"></i>Pruebas de coagulación</li>
-                                                        <li><i className="fas fa-vial text-primary me-2"></i>Urocultivo y EGO</li>
-                                                        <li><i className="fas fa-vial text-primary me-2"></i>Glicemia en ayunas</li>
-                                                        <li><i className="fas fa-vial text-primary me-2"></i>PSA total y libre</li>
-                                                    </ul>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <h6 className="text-secondary mb-2">Preparación especial:</h6>
-                                                    <ul className="list-unstyled text-muted">
-                                                        <li><i className="fas fa-pills text-success me-2"></i>Antibióticos (según indicación)</li>
-                                                        <li><i className="fas fa-pills text-success me-2"></i>Laxante</li>
-                                                        <li><i className="fas fa-utensils text-warning me-2"></i>Dieta especial (se brinda flyer)</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4">
-                                            <div className="bg-light rounded-4 p-4 h-100">
-                                                <h5 className="text-dark mb-3">
-                                                    <i className="fas fa-clipboard-list text-danger me-2"></i>
-                                                    Información del Procedimiento
-                                                </h5>
-                                                <p className="text-muted small mb-3">
-                                                    Procedimiento diagnóstico especializado para detectar anomalías en el tejido prostático con alta precisión.
-                                                </p>
-                                                <div className="alert alert-danger mb-0" role="alert">
-                                                    <small><strong>Importante:</strong> Se requiere completar todos los laboratorios y seguir la preparación especial antes del procedimiento.</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Otros Procedimientos en Grid */}
-                    <div className="row g-4">
-                        {/* Vasectomía */}
-                        <div className="col-lg-6">
-                            <div className="card border-0 shadow-sm h-100">
-                                <div className="card-body p-4">
-                                    <div className="d-flex align-items-start mb-3">
-                                        <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
-                                            style={{ width: '60px', height: '60px', minWidth: '60px' }}>
-                                            <i className="fas fa-cut fs-5"></i>
-                                        </div>
-                                        <div>
-                                            <h4 className="text-dark mb-2">Vasectomía</h4>
-                                            <span className="badge bg-success fs-6 mb-3">₡180,000 + IVA</span>
-                                        </div>
-                                    </div>
-
-                                    <h6 className="text-secondary mb-2">Requisitos:</h6>
-                                    <ul className="list-unstyled text-muted mb-3">
-                                        <li><i className="fas fa-user-friends text-primary me-2"></i>Venir con acompañante</li>
-                                        <li><i className="fas fa-razor text-primary me-2"></i>Rasurado previo</li>
-                                        <li><i className="fas fa-clock text-warning me-2"></i>3 horas de ayuno</li>
-                                    </ul>
-
-                                    <div className="alert alert-success" role="alert">
-                                        <small><i className="fas fa-file-alt me-2"></i><strong>Incluye:</strong> Flyer con cuidados y recomendaciones post-operatorias</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Cauterización de Papilomas */}
-                        <div className="col-lg-6">
-                            <div className="card border-0 shadow-sm h-100">
-                                <div className="card-body p-4">
-                                    <div className="d-flex align-items-start mb-3">
-                                        <div className="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
-                                            style={{ width: '60px', height: '60px', minWidth: '60px' }}>
-                                            <i className="fas fa-fire fs-5"></i>
-                                        </div>
-                                        <div>
-                                            <h4 className="text-dark mb-2">Cauterización de Papilomas</h4>
-                                            <span className="badge bg-warning fs-6 mb-3">₡55,000 + IVA</span>
-                                            <p className="text-muted small mb-0">*Precio según valoración</p>
-                                        </div>
-                                    </div>
-
-                                    <p className="text-muted mb-3">
-                                        Eliminación efectiva de papilomas con técnicas de cauterización avanzadas.
-                                        El precio final se determina según el caso específico.
-                                    </p>
-
-                                    <div className="alert alert-info" role="alert">
-                                        <small><i className="fas fa-info-circle me-2"></i><strong>Nota:</strong> El precio se determina según el caso y extensión del tratamiento requerido.</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Circuncisión */}
-                        <div className="col-lg-6">
-                            <div className="card border-0 shadow-sm h-100">
-                                <div className="card-body p-4">
-                                    <div className="d-flex align-items-start mb-3">
-                                        <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
-                                            style={{ width: '60px', height: '60px', minWidth: '60px' }}>
-                                            <i className="fas fa-scalpel fs-5"></i>
-                                        </div>
-                                        <div>
-                                            <h4 className="text-dark mb-2">Circuncisión</h4>
-                                            <span className="badge bg-primary fs-6 mb-2">₡500,000 + IVA</span>
-                                            <p className="text-muted small mb-0">Con anestesia local</p>
-                                            <p className="text-muted small mb-0">Sedación: +₡70,000</p>
-                                        </div>
-                                    </div>
-
-                                    <h6 className="text-secondary mb-2">Requisitos:</h6>
-                                    <ul className="list-unstyled text-muted mb-3">
-                                        <li><i className="fas fa-clock text-warning me-2"></i>6 horas de ayuno</li>
-                                        <li><i className="fas fa-user-friends text-primary me-2"></i>Acompañante</li>
-                                    </ul>
-
-                                    <h6 className="text-secondary mb-2">Laboratorios requeridos:</h6>
-                                    <ul className="list-unstyled text-muted mb-3 small">
-                                        <li><i className="fas fa-vial text-primary me-2"></i>Hemograma completo</li>
-                                        <li><i className="fas fa-vial text-primary me-2"></i>Pruebas de coagulación</li>
-                                        <li><i className="fas fa-vial text-primary me-2"></i>Glicemia en ayunas</li>
-                                    </ul>
-
-                                    <div className="alert alert-primary" role="alert">
-                                        <small><i className="fas fa-calendar-check me-2"></i><strong>Incluye:</strong> Una cita de control post-operatoria</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Cistoscopia */}
-                        <div className="col-lg-6">
-                            <div className="card border-0 shadow-sm h-100">
-                                <div className="card-body p-4">
-                                    <div className="d-flex align-items-start mb-3">
-                                        <div className="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
-                                            style={{ width: '60px', height: '60px', minWidth: '60px' }}>
-                                            <i className="fas fa-search fs-5"></i>
-                                        </div>
-                                        <div>
-                                            <h4 className="text-dark mb-2">Cistoscopia</h4>
-                                            <span className="badge bg-info fs-6 mb-2">₡150,000 + IVA</span>
-                                            <p className="text-muted small mb-0">Con anestesia local</p>
-                                            <p className="text-muted small mb-0">Sedación: +₡70,000</p>
-                                        </div>
-                                    </div>
-
-                                    <h6 className="text-secondary mb-2">Requisitos:</h6>
-                                    <ul className="list-unstyled text-muted mb-3">
-                                        <li><i className="fas fa-vial text-primary me-2"></i>EGO y Urocultivo sin infección</li>
-                                        <li><i className="fas fa-user-friends text-primary me-2"></i>Acompañante</li>
-                                    </ul>
-
-                                    <p className="text-muted mb-3">
-                                        Examen diagnóstico para visualizar el interior de la vejiga y la uretra.
-                                    </p>
-
-                                    <div className="alert alert-info" role="alert">
-                                        <small><i className="fas fa-exclamation-circle me-2"></i><strong>Importante:</strong> Los cultivos deben estar sin datos de infección</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Frenoplastia */}
-                        <div className="col-lg-12">
-                            <div className="card border-0 shadow-sm">
-                                <div className="card-body p-4">
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-8">
+                    {/* Services Grid con estilo consistente */}
+                    <div className="row g-4 mb-5">
+                        {services.map((service) => {
+                            const IconComponent = service.icon;
+                            return (
+                                <div key={service.id} className="col-lg-6">
+                                    <div className="card border-0 shadow-sm h-100 hover-lift">
+                                        <div className="card-body p-4">
                                             <div className="d-flex align-items-start mb-3">
-                                                <div className="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
-                                                    style={{ width: '60px', height: '60px', minWidth: '60px' }}>
-                                                    <i className="fas fa-band-aid fs-5"></i>
+                                                <div
+                                                    className="bg-light rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm"
+                                                    style={{ width: '60px', height: '60px', minWidth: '60px' }}
+                                                >
+                                                    <IconComponent size={24} strokeWidth={1.5} color="#6c757d" />
                                                 </div>
-                                                <div>
-                                                    <h4 className="text-dark mb-2">Frenoplastia</h4>
-                                                    <span className="badge bg-secondary fs-6 mb-2">₡150,000 + IVA</span>
-                                                    <p className="text-muted small mb-0">Con anestesia local | Sedación: +₡70,000</p>
+                                                <div className="flex-grow-1">
+                                                    <h4 className="text-dark mb-2 fw-bold">{service.title}</h4>
+                                                    <p className="text-muted mb-0 lh-base">{service.description}</p>
                                                 </div>
                                             </div>
-
-                                            <h6 className="text-secondary mb-2">Requisitos:</h6>
-                                            <ul className="list-unstyled text-muted mb-3">
-                                                <li><i className="fas fa-user-friends text-primary me-2"></i>Acompañante</li>
-                                                <li><i className="fas fa-clock text-warning me-2"></i>6 horas de ayuno</li>
-                                            </ul>
-
-                                            <p className="text-muted mb-0">
-                                                Procedimiento quirúrgico para corregir el frenillo corto del pene, mejorando la función sexual.
-                                            </p>
-                                        </div>
-                                        <div className="col-lg-4">
-                                            <div className="bg-light rounded-4 p-4">
-                                                <h6 className="text-dark mb-2">
-                                                    <i className="fas fa-clock text-secondary me-2"></i>
-                                                    Preparación
-                                                </h6>
-                                                <p className="text-muted small mb-0">
-                                                    Procedimiento ambulatorio que requiere ayuno previo y acompañante para la seguridad del paciente.
-                                                </p>
+                                            <div className="mt-4 pt-3 border-top">
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+
+
+                    {/* Call to Action mejorado */}
+                    <div className="row">
+                        <div className="col-lg-8 mx-auto">
+                            <div className="bg-light rounded-4 p-5 text-center">
+                                <h3 className="h4 fw-bold text-dark mb-3">
+                                    ¿Necesitas más información sobre nuestros servicios?
+                                </h3>
+                                <p className="text-muted mb-4">
+                                    Contacta con nuestro equipo médico para resolver todas tus dudas y programar tu cita
+                                </p>
+                                <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                                    <a href="https://wa.me/50687051691"
+                                        className="btn px-4 py-3 rounded-pill fw-medium"
+                                        style={{ backgroundColor: '#25d366', color: 'white', border: 'none' }}
+                                        target="_blank">
+                                        <i className="fab fa-whatsapp me-2"></i>
+                                        Agendar Cita
+                                    </a>
+                                    <button className="btn btn-outline-primary px-4 py-3 rounded-pill fw-medium">
+                                        Contactar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            {/* Añadir estilos CSS para hover effect */}
+            <style jsx>{`
+                .hover-lift {
+                    transition: all 0.3s ease;
+                }
+                .hover-lift:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+                }
+            `}</style>
 
             <section className="py-5 bg-light">
                 <div className="container">
@@ -564,20 +339,6 @@ const ServicesPage = () => {
                                     <h5 className="text-dark mb-3">Transferencias</h5>
                                     <p className="text-muted mb-0">SINPE Móvil y transferencias bancarias</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row mt-5">
-                        <div className="col-lg-8 mx-auto">
-                            <div className="alert alert-info text-center" role="alert">
-                                <h5 className="alert-heading d-flex justify-content-center align-items-center gap-2">
-                                    <FaInfoCircle />
-                                    Información Importante sobre Pagos
-                                </h5>
-                                <p className="mb-3">• Todos los precios están sujetos al IVA vigente</p>
-                                <p className="mb-3">• Los pagos deben realizarse antes o al momento del procedimiento</p>
-                                <p className="mb-0">• Para procedimientos quirúrgicos, se requiere confirmación de pago con anticipación</p>
                             </div>
                         </div>
                     </div>
@@ -672,7 +433,7 @@ const ServicesPage = () => {
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
-                                        border: '2px solid white', // <- corregido
+                                        border: '2px solid white',
                                     }}
                                 >
                                     <img
