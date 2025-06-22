@@ -6,7 +6,9 @@ import {
     FaCcVisa,
     FaCreditCard,
     FaMobileAlt,
-    FaInfoCircle
+    FaInfoCircle,
+    FaWhatsapp
+
 } from 'react-icons/fa';
 import {
     Stethoscope,
@@ -125,7 +127,7 @@ const ServicesPage = () => {
                                 realizados con la más alta tecnología y estándares de calidad médica.
                             </p>
                             <div className="d-flex gap-3">
-                                <a href="https://wa.me/506870516918"
+                                <a href="https://wa.me/50687051691"
                                     className="btn px-4 py-3 rounded-pill fw-medium"
                                     style={{ backgroundColor: '#25d366', color: 'white', border: 'none' }}
                                     target="_blank">
@@ -177,7 +179,7 @@ const ServicesPage = () => {
                     e.target.style.backgroundColor = '#25d366';
                 }}
             >
-                <i className="fab fa-whatsapp text-white fs-3"></i>
+                <FaWhatsapp size={28} color="white" />
             </a>
 
             {/* CSS para la animación del botón flotante */}
