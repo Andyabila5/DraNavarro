@@ -41,7 +41,7 @@ const AboutPage = () => {
       </nav>
 
       {/* Hero Section - About */}
-      <section style={{ paddingTop: '80px', backgroundColor: '#f8f9fa' }}>
+      <section style={{ paddingTop: '80px', backgroundColor: '#edece9' }}>
         <div className="container py-5">
           <div className="row align-items-center min-vh-50">
             <div className="col-lg-12 text-center">
@@ -476,7 +476,7 @@ const AboutPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-dark text-white py-5">
+      <footer style={{ backgroundColor: '#6c757d' }}className="bg-dark text-white py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">

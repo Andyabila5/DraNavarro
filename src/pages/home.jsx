@@ -11,7 +11,12 @@ const App = () => {
           <Link className="navbar-brand fw-bold py-3" to="/" style={{ color: '#2c3e50' }}>
             <div className="d-flex align-items-center">
               <div className="me-3" style={{ width: '70px', height: '70px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <img src="Logo.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img
+                  src={`${import.meta.env.BASE_URL}Logo.png`}
+                  alt="Logo"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+
               </div>
               <span style={{ fontSize: '1.1rem' }}>Dra. Marcela Navarro Guzmán</span>
             </div>
@@ -40,7 +45,7 @@ const App = () => {
         </div>
       </nav>
       {/* Hero Section */}
-      <section id="inicio" style={{ paddingTop: '80px', backgroundColor: '#f8f9fa' }}>
+      <section id="inicio" style={{ paddingTop: '80px', backgroundColor: '#edece9' }}>
         <div className="container py-5">
           <div className="row align-items-center min-vh-100">
             <div className="col-lg-6">
@@ -48,11 +53,14 @@ const App = () => {
                 BIENVENIDO A MI CONSULTA
               </p>
               <h1 className="display-4 fw-bold mb-4" style={{ color: '#2c3e50', lineHeight: '1.2' }}>
-                Atención médica personalizada con enfoque integral para tu bienestar
+                UroClinic
               </h1>
+              <h1 className="display-4 fw-bold mb-4" style={{ color: '#2c3e50', lineHeight: '1.2' }}>
+                By Dra Navarro G
+              </h1>
+
               <p className="lead mb-4" style={{ color: '#6c757d' }}>
-                Especialista en Urología con más de 11 años de experiencia.
-                Brindar a mis pacientes una atención óptima y oportuna es mi prioridad,
+                Es un centro especializado para brindar a mis pacientes una atención óptima y oportuna,
                 con un manejo integral de cada patología desde tres enfoques: médico-quirúrgico-psicoemocional.
               </p>
               <div className="mb-3">
@@ -74,11 +82,12 @@ const App = () => {
                 <div className="bg-white rounded-4 shadow-lg p-4 mx-auto" style={{ maxWidth: '400px' }}>
                   <div className="rounded-4 overflow-hidden" style={{ height: '500px', backgroundColor: '#e9ecef' }}>
                     <img
-                      src="DraNavarro.png"
+                      src={`${import.meta.env.BASE_URL}DraNavarro.png`}
                       alt="Dra. Marcela Navarro Guzmán"
                       className="w-100 h-100"
                       style={{ objectFit: 'cover', objectPosition: 'center' }}
                     />
+
                   </div>
                 </div>
               </div>
@@ -88,7 +97,7 @@ const App = () => {
       </section>
 
       {/* Sobre Mí Section - Mejorada */}
-      <section id="sobre-mi" className="py-5 bg-white">
+      <section id="sobre-mi" className="py-5" style={{ backgroundColor: '#edece9' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto text-center">
@@ -148,7 +157,7 @@ const App = () => {
               </p>
 
               <div className="text-center">
-                <a href="DraNavarro/about" className="btn btn-outline-secondary px-4 py-2">
+                <a href="/about" className="btn btn-outline-secondary px-4 py-2">
                   Ver más información
                 </a>
               </div>
@@ -158,7 +167,7 @@ const App = () => {
       </section>
 
       {/* Servicios Section */}
-      <section id="servicios" className="py-5 bg-light">
+      <section id="servicios" className="py-5" style={{ backgroundColor: '#edece9' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
@@ -239,7 +248,7 @@ const App = () => {
       </section>
 
       {/* Contacto Section */}
-      <section id="contacto" className="py-5 bg-white">
+      <section id="contacto" className="py-5" style={{ backgroundColor: '#edece9' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">

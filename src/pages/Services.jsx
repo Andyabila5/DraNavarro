@@ -357,7 +357,9 @@ const ServicesPage = () => {
                             </p>
                         </div>
                     </div>
+
                     <div className="row g-4 align-items-center">
+                        {/* Info de contacto */}
                         <div className="col-lg-6">
                             <div className="card border-0 shadow-sm">
                                 <div className="card-body p-4">
@@ -365,13 +367,17 @@ const ServicesPage = () => {
                                         <i className="fas fa-map-marker-alt text-primary me-2"></i>
                                         Información de Contacto
                                     </h4>
+
                                     <div className="mb-3">
                                         <h6 className="text-dark mb-2">
                                             <i className="fas fa-building text-secondary me-2"></i>
                                             Dirección
                                         </h6>
-                                        <p className="text-muted mb-0">Calle 8, San Carlos, Costa Rica</p>
+                                        <p className="text-muted mb-0">
+                                            NOVA UROCLINICA by Dra. Navarro, San Carlos, Costa Rica
+                                        </p>
                                     </div>
+
                                     <div className="mb-3">
                                         <h6 className="text-dark mb-2">
                                             <i className="fas fa-phone text-secondary me-2"></i>
@@ -379,6 +385,7 @@ const ServicesPage = () => {
                                         </h6>
                                         <p className="text-muted mb-0">+506 8705 1691</p>
                                     </div>
+
                                     <div className="mb-4">
                                         <h6 className="text-dark mb-2">
                                             <i className="fas fa-clock text-secondary me-2"></i>
@@ -387,30 +394,48 @@ const ServicesPage = () => {
                                         <p className="text-muted mb-1">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
                                         <p className="text-muted mb-0">Sábados: 8:00 AM - 12:00 PM</p>
                                     </div>
-                                    <a href="https://wa.me/50687051691"
+
+                                    <a
+                                        href="https://wa.me/50687051691"
                                         className="btn px-4 py-2 rounded-pill fw-medium w-100"
                                         style={{ backgroundColor: '#25d366', color: 'white', border: 'none' }}
-                                        target="_blank">
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <i className="fab fa-whatsapp me-2"></i>
                                         AGENDAR CITA POR WHATSAPP
                                     </a>
                                 </div>
                             </div>
                         </div>
+
+                        {/* Mapa */}
                         <div className="col-lg-6">
                             <div className="card border-0 shadow-sm">
                                 <div className="card-body p-0">
                                     <div style={{ height: '400px', borderRadius: '0.5rem', overflow: 'hidden' }}>
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.8234567890123!2d-84.435800!3d10.340600!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDIwJzI2LjIiTiA4NMKwMjYnMDguOSJX!5e0!3m2!1ses!2scr!4v1234567890123!5m2!1ses!2scr"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.822996164596!2d-84.43725062419842!3d10.340712492793735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa065d16e43a39b%3A0xd5efab948478f1e!2sNOVA%20UROCLINICA%20by%20Dra.%20Navarro!5e0!3m2!1ses!2scr!4v1700000000000!5m2!1ses!2scr"
                                             width="100%"
                                             height="100%"
                                             style={{ border: 0 }}
                                             allowFullScreen=""
                                             loading="lazy"
                                             referrerPolicy="no-referrer-when-downgrade"
-                                            title="Ubicación del Consultorio - Dra. Marcela Navarro Guzmán"
+                                            title="Ubicación NOVA UROCLINICA - Dra. Navarro"
                                         ></iframe>
+                                    </div>
+
+                                    {/* Botón extra */}
+                                    <div className="p-3">
+                                        <a
+                                            href="https://www.google.com/maps/place/NOVA+UROCLINICA+by+Dra.+Navarro/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn btn-outline-primary w-100"
+                                        >
+                                            Ver en Google Maps
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -418,6 +443,7 @@ const ServicesPage = () => {
                     </div>
                 </div>
             </section>
+
 
             {/* Footer */}
             <footer className="bg-dark text-white py-5">
