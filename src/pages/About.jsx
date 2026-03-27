@@ -3,8 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
+
+  window.scrollTo(0, 0);
+
   return (
+
     <div className="App">
+
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style={{ backgroundColor: '#f8f9fa', minHeight: '80px' }}>
         <div className="container">
@@ -39,6 +44,7 @@ const AboutPage = () => {
           </div>
         </div>
       </nav>
+
 
       {/* Hero Section - About */}
       <section style={{ paddingTop: '80px', backgroundColor: '#edece9' }}>
