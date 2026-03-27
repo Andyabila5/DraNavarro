@@ -53,10 +53,10 @@ const App = () => {
                 BIENVENIDO A MI CONSULTA
               </p>
               <h1 className="display-4 fw-bold mb-4" style={{ color: '#2c3e50', lineHeight: '1.2' }}>
-                UroClinic
+                Nova UroClinica
               </h1>
               <h1 className="display-4 fw-bold mb-4" style={{ color: '#2c3e50', lineHeight: '1.2' }}>
-                By Dra Navarro G
+                Dra Navarro G
               </h1>
 
               <p className="lead mb-4" style={{ color: '#6c757d' }}>
@@ -307,27 +307,27 @@ const App = () => {
                       <div className="text-muted small">
                         <div className="d-flex justify-content-between">
                           <span>Lunes:</span>
-                          <span className="text-danger">Cerrado</span>
+                          <span> 1:00 PM - 5:30 PM </span>
                         </div>
                         <div className="d-flex justify-content-between">
                           <span>Martes:</span>
-                          <span>1:20 PM - 6:00 PM</span>
+                          <span>1:00 PM - 5:30 PM</span>
                         </div>
                         <div className="d-flex justify-content-between">
                           <span>Miércoles:</span>
-                          <span className="text-danger">Cerrado</span>
+                          <span> 1:00 PM - 5:30 PM</span>
                         </div>
                         <div className="d-flex justify-content-between">
                           <span>Jueves:</span>
-                          <span>1:20 PM - 6:00 PM</span>
+                          <span>1:00 PM - 5:30 PM</span>
                         </div>
                         <div className="d-flex justify-content-between">
                           <span>Viernes:</span>
-                          <span className="text-danger">Cerrado</span>
+                          <span>1:00 PM - 5:30 PM</span>
                         </div>
                         <div className="d-flex justify-content-between">
                           <span>Sábado:</span>
-                          <span>10:00 AM - 2:00 PM</span>
+                          <span className="text-danger">Cerrado</span>
                         </div>
                       </div>
                     </div>
@@ -419,27 +419,93 @@ const App = () => {
       `}</style>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#6c757d' }} className="text-white py-4">
+      <footer className="bg-dark text-white py-5">
         <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="d-flex align-items-center mb-4">
+                <div
+                  className="me-3"
+                  style={{
+                    width: '60px',
+                    height: '60px',
+                    borderRadius: '50%',
+                    overflow: 'hidden',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    border: '2px solid white',
+                  }}
+                >
+                  <img
+                    src={`${import.meta.env.BASE_URL}Logo.png`}
+                    alt="Logo"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                </div>
+                <div>
+                  <h5 className="mb-1">Dra. Marcela Navarro Guzmán</h5>
+                  <p className="text-white-50 mb-0">Especialista en Urología</p>
+                </div>
+              </div>
+              <p className="text-white-50 mb-4">
+                Brindando atención urológica especializada con los más altos estándares de calidad y tecnología médica.
+              </p>
+            </div>
+
+            <div className="col-lg-3">
+              <h6 className="text-white mb-3">Enlaces Rápidos</h6>
+              <ul className="list-unstyled">
+                <li className="mb-2">
+                  <Link to="/" className="text-white-50 text-decoration-none">
+                    <i className="fas fa-home me-2"></i>Inicio
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/about" className="text-white-50 text-decoration-none">
+                    <i className="fas fa-user-md me-2"></i>Sobre Mí
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/servicios" className="text-white-50 text-decoration-none">
+                    <i className="fas fa-stethoscope me-2"></i>Servicios
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="col-lg-3">
+              <h6 className="text-white mb-3">Contacto</h6>
+              <p className="text-white-50 mb-2">
+                <i className="fab fa-whatsapp me-2"></i>
+                +506 8705-1691
+              </p>
+
+              {/* Horarios de Atención */}
+              <h6 className="text-white mt-4 mb-2">Horarios de Atención</h6>
+              <ul className="list-unstyled text-white-50 mb-0 small">
+                <li>Lunes: 1:00 PM - 5:30 PM</li>
+                <li>Martes: 1:00 PM - 5:30 PM</li>
+                <li>Miércoles: 1:00 PM - 5:30 PM</li>
+                <li>Jueves: 1:00 PM - 5:30 PM</li>
+                <li>Viernes: 1:00 PM - 5:30 PM</li>
+                <li>Sábado: Cerrado</li>
+                <li>Domingo: Cerrado</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr className="border-secondary my-4" />
+
           <div className="row align-items-center">
             <div className="col-md-6">
-              <h5 className="mb-0">Dra. Marcela Navarro Guzmán</h5>
-              <p className="mb-0 text-light">Especialista en Urología - MED9124</p>
+              <p className="text-white-50 mb-0">
+                © 2025 Dra. Marcela Navarro Guzmán. Todos los derechos reservados.
+              </p>
             </div>
             <div className="col-md-6 text-md-end">
-              <div className="d-flex justify-content-md-end gap-3">
-                <a href="#" className="text-light">
-                  <i className="fab fa-facebook fs-5"></i>
-                </a>
-                <a href="#" className="text-light">
-                  <i className="fab fa-instagram fs-5"></i>
-                </a>
-                <a href="#" className="text-light">
-                  <i className="fab fa-linkedin fs-5"></i>
-                </a>
-              </div>
-              <p className="mb-0 mt-2 text-light small">
-                © 2025 Todos los derechos reservados
+              <p className="text-white-50 mb-0">
+                Especialista en Urología
               </p>
             </div>
           </div>

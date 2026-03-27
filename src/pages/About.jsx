@@ -11,7 +11,7 @@ const AboutPage = () => {
           <a className="navbar-brand fw-bold py-3" href="/" style={{ color: '#2c3e50' }}>
             <div className="d-flex align-items-center">
               <div className="me-3" style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid #e9ecef' }}>
-                <img src="Logo.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src="Logo.png" alt="Logo" style={{ width: '90%', height: '90%', objectFit: 'cover' }} />
               </div>
               <span style={{ fontSize: '1.1rem' }}>Dra. Marcela Navarro Guzmán</span>
             </div>
@@ -69,7 +69,7 @@ const AboutPage = () => {
                 <div className="bg-white rounded-4 shadow-lg p-4 mx-auto" style={{ maxWidth: '400px' }}>
                   <div className="rounded-4 overflow-hidden" style={{ height: '500px', backgroundColor: '#e9ecef' }}>
                     <img
-                      src="DraNavarro.png"
+                      src="Dra2.jpg"
                       alt="Dra. Marcela Navarro Guzmán"
                       className="w-100 h-100"
                       style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -476,7 +476,7 @@ const AboutPage = () => {
       </section>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#6c757d' }}className="bg-dark text-white py-5">
+      <footer className="bg-dark text-white py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -491,11 +491,11 @@ const AboutPage = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    border: '2px solid white', // <- corregido
+                    border: '2px solid white',
                   }}
                 >
                   <img
-                    src="Logo.png"
+                    src={`${import.meta.env.BASE_URL}Logo.png`}
                     alt="Logo"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
@@ -541,12 +541,12 @@ const AboutPage = () => {
               {/* Horarios de Atención */}
               <h6 className="text-white mt-4 mb-2">Horarios de Atención</h6>
               <ul className="list-unstyled text-white-50 mb-0 small">
-                <li>Lunes: Cerrado</li>
-                <li>Martes: 1:20 PM - 6:00 PM</li>
-                <li>Miércoles: Cerrado</li>
-                <li>Jueves: 1:20 PM - 6:00 PM</li>
-                <li>Viernes: Cerrado</li>
-                <li>Sábado: 10:00 AM - 2:00 PM</li>
+                <li>Lunes: 1:00 PM - 5:30 PM</li>
+                <li>Martes: 1:00 PM - 5:30 PM</li>
+                <li>Miércoles: 1:00 PM - 5:30 PM</li>
+                <li>Jueves: 1:00 PM - 5:30 PM</li>
+                <li>Viernes: 1:00 PM - 5:30 PM</li>
+                <li>Sábado: Cerrado</li>
                 <li>Domingo: Cerrado</li>
               </ul>
             </div>
